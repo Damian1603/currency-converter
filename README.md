@@ -1,4 +1,4 @@
-# Damian Kuczyński
+# Damian Kuczyński - currency converter
 
 ## Demo 
 
