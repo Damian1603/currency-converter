@@ -70,5 +70,10 @@ body {
     border: 3px solid rgb(112, 107, 107);
     border-radius: 5px;
     box-shadow: 1px -4px 12px rgb(90 89 89);
-    padding: 20px;
+    padding: 20px;  
+    background-color:gainsboro;
+}
+
+.element {
+    background-image: url("../images/piniadz.png");
 }
