@@ -1,4 +1,4 @@
-# Damian Kuczyński - currency converter
+# Currency converter
 
 [![currency-converter.png](https://i.postimg.cc/tCLcKrF8/currency-converter.png)](https://postimg.cc/CzsJDsP4)
 
