@@ -1,27 +1,57 @@
-let amountElement = document.querySelector(".js-amount")
-let currencyElement = document.querySelector(".js-currency")
-let resultElement = document.querySelector(".js-result")
-let formElement = document.querySelector(".js-form")
+{
+    const calculateResult = (amount, currency) => {
 
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault()
-    
-    let amount = amountElement.value
-    let currency = currencyElement.value
+        const currencyEUR = 4.7004;
+        const currencyUSD = 4.3066;
+        const currencyGBP = 5.3505;
 
-    let currencyEUR = 4.7004;
-    let currencyUSD = 4.3066;
-    let currencyGBP = 5.3505;
+        switch (currency) {
+            case "EUR":
+                return amount * currencyEUR;
 
-    switch (currency) {
-        case "EUR":
-            result = amount * currencyEUR;
-            break;
-        case "USD":
-            result = amount * currencyUSD;
-            break;
-        case "GBP":
-            result = amount * currencyGBP
-    }
-    resultElement.value = result.toFixed(2);
-});
+            case "USD":
+                return amount * currencyUSD;
+
+            case "GBP":
+                return amount * currencyGBP
+        }
+    };
+
+    const updateResultText = (amount, result, currency) => {
+        const resultElement = document.querySelector(".js-result");
+        resultElement.value = result.toFixed(2);
+    };
+
+    const onFormSubmit = (event) => {
+        event.preventDefault();
+        const amountElement = document.querySelector(".js-amount");
+        const currencyElement = document.querySelector(".js-currency");
+        const amount = +amountElement.value;
+        const currency = currencyElement.value;
+        const result = calculateResult(amount, currency);
+        updateResultText(amount, result, currency)
+    };
+
+    const init = () => {
+        const formElement = document.querySelector(".js-form");
+        formElement.addEventListener("submit", onFormSubmit);
+    };
+    init();
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
