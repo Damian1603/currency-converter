@@ -14,46 +14,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
-    <script defer src="script.js"></script>
+    <script defer src="js/script.js"></script>
 </head>
 
 <body class="body">
-
-    <form class="form js-form">
-        <fieldset class="form__fieldset">
-            <legend class="form__legend">Kalkulator walutowy</legend>
-            <label>
-                <span class="form__labelText">Kwota*: </span>
-                <input class="form__field js-amount" type="number" name="amount" min="1" step="any" required=""
-                    placeholder="Podaj kwotę">
-            </label>
-            <p>
+  
+        <form class="form js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Kalkulator walutowy</legend>
                 <label>
-                    <span class="form__labelText">Waluta:</span>
-                    <select class="form__field js-currency" name="currency">
-                        <option value="EUR">EUR - Unia Europejska</option>
-                        <option value="USD">USD - USA </option>
-                        <option value="GBP">GBP - Wielka Brytania </option>
-                    </select>
+                    <span class="form__labelText">Kwota*: </span>
+                    <input class="form__field js-amount" type="number" name="amount" min="1" step="any" required=""
+                        placeholder="Podaj kwotę">
                 </label>
+                <p>
+                    <label>
+                        <span class="form__labelText">Waluta:</span>
+                        <select class="form__field js-currency" name="currency">
+                            <option value="EUR">EUR - Unia Europejska</option>
+                            <option value="USD">USD - USA </option>
+                            <option value="GBP">GBP - Wielka Brytania </option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="form__labelText">Wartość w PLN:</span>
+                        <input class="form__field form__field--result js-result" name="result" type="number" disabled>
+                    </label>
+                </p>
+            </fieldset>
+            <p>
+                <button class="form__button js-submit">Oblicz</button>
             </p>
             <p>
-                <label>
-                    <span class="form__labelText">Wartość w PLN:</span>
-                    <input class="form__field form__field--result js-result" name="result" type="number" disabled>
-                </label>
+                <button class="form__button" type="reset">Wyczyść</button>
             </p>
-        </fieldset>
-        <p>
-            <button class="form__button js-submit">Oblicz</button>
-        </p>
-        <p>
-            <button class="form__button" type="reset">Wyczyść</button>
-        </p>
-        <p>
-            * - to pole musi być uzupełnione
-        </p>
-    </form>
+            <p>
+                * - to pole musi być uzupełnione
+            </p>
+        </form>
+    
 </body>
 
 </html>
