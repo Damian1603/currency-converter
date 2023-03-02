@@ -1,6 +1,6 @@
 # Currency converter
 
-[![currency-converter.png](https://i.postimg.cc/tCLcKrF8/currency-converter.png)](https://postimg.cc/CzsJDsP4)
+[![Zrzut-ekranu-2023-03-02-134051.png](https://i.postimg.cc/j2tw3DyM/Zrzut-ekranu-2023-03-02-134051.png)](https://postimg.cc/Q9YdHx47)
 
 ## Description
 
