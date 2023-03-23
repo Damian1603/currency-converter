@@ -17,7 +17,7 @@
         }
     };
 
-    const updateResultText = (result) => {
+    const updateResultText = (amount, result, currency) => {
         const resultElement = document.querySelector(".js-result");
         resultElement.value = result.toFixed(2);
     };
@@ -42,20 +42,3 @@
 
     init();
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
